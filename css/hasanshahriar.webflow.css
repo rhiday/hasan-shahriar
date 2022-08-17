@@ -1078,6 +1078,10 @@ figcaption {
   margin-top: 1rem;
 }
 
+.brand:hover {
+  text-decoration: none;
+}
+
 .brand.w--current:hover {
   text-decoration: none;
 }
