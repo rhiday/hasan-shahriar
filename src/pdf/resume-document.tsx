@@ -133,10 +133,6 @@ const styles = StyleSheet.create({
     marginRight: 8,
     marginBottom: 8,
   },
-  contactButtonIcon: {
-    width: 14,
-    height: 14,
-  },
   contactButtonLabel: {
     fontFamily: "JetBrains Mono",
     fontSize: 12,
@@ -437,7 +433,7 @@ function renderContactButtons() {
 
   return buttons.map((button) => (
     <View key={button.key} style={styles.contactButton}>
-      <IconGraphic type={button.icon} size={13} style={styles.contactButtonIcon} />
+      <IconGraphic type={button.icon} size={13} />
       <Text style={styles.contactButtonLabel}>{button.label}</Text>
     </View>
   ));
