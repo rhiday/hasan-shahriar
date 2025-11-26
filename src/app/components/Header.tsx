@@ -1,5 +1,6 @@
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import Image, { type StaticImageData } from "next/image";
+import Link from "next/link";
 import React from "react";
 import { Avatar } from "@/components/avatar";
 import { Button } from "@/components/ui/button";
@@ -177,7 +178,9 @@ export function Header() {
     <header className="flex items-center justify-between">
       <div className="flex-1 space-y-1.5">
         <h1 className="text-2xl font-bold" id="resume-name">
-          {RESUME_DATA.name}
+          <Link href="/" className="hover:underline">
+            {RESUME_DATA.name}
+          </Link>
         </h1>
         <p className="max-w-md text-pretty font-mono text-sm text-foreground/80 print:text-[12px]">
           {RESUME_DATA.about}
