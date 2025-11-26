@@ -146,10 +146,6 @@ const styles = StyleSheet.create({
     marginRight: 16,
     marginBottom: 4,
   },
-  inlineIcon: {
-    width: 14,
-    height: 14,
-  },
   inlineText: {
     fontFamily: "JetBrains Mono",
     fontSize: 13,
@@ -460,7 +456,6 @@ export function ResumeDocument({ avatarPath }: ResumeDocumentProps) {
               <IconGraphic
                 type="globe"
                 size={14}
-                style={styles.inlineIcon}
               />
               <Text style={styles.inlineText}>{RESUME_DATA.location}</Text>
             </View>
@@ -470,7 +465,6 @@ export function ResumeDocument({ avatarPath }: ResumeDocumentProps) {
                   <IconGraphic
                     type="mail"
                     size={14}
-                    style={styles.inlineIcon}
                   />
                   <Text style={styles.inlineText}>
                     {RESUME_DATA.contact.email}
@@ -482,7 +476,6 @@ export function ResumeDocument({ avatarPath }: ResumeDocumentProps) {
                   <IconGraphic
                     type="phone"
                     size={14}
-                    style={styles.inlineIcon}
                   />
                   <Text style={styles.inlineText}>
                     {RESUME_DATA.contact.tel}
