@@ -13,6 +13,7 @@ import {
   Svg,
   Text,
   View,
+  type Style,
 } from "@react-pdf/renderer";
 import { RESUME_DATA } from "@/data/resume-data";
 import type { IconType } from "@/lib/types";
@@ -318,7 +319,7 @@ function IconGraphic({
 }: {
   type: IconType;
   size?: number;
-  style?: Record<string, unknown>;
+  style?: Style;
 }) {
   switch (type) {
     case "globe":
