@@ -14,11 +14,6 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cv.jarocki.me"),
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
-  },
   title: {
     default: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
     template: `%s | ${RESUME_DATA.name}`,
